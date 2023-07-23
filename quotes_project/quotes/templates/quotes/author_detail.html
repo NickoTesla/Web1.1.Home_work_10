@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Author Detail</title>
+</head>
+
+<body>
+    <h1>{{ author.name }}</h1>
+    <h2>Quotes</h2>
+    {% for quote in quotes %}
+    <blockquote>
+        <p>{{ quote.text }}</p>
+    </blockquote>
+    {% endfor %}
+</body>
+
+</html>
